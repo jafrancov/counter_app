@@ -1,3 +1,4 @@
+import 'package:counter_app/src/utils/cupertino_icons_custom.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -59,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 CupertinoButton(
                                     color: CupertinoColors.activeBlue,
                                     padding: EdgeInsets.symmetric(horizontal: 20.0),
-                                    child: Icon(Icons.add),
+                                    child: Icon(getCupertinoIconData('plus')),
                                     onPressed: _incrementCounter,
                                 ),
                                 SizedBox(
@@ -68,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 CupertinoButton(
                                     color: CupertinoColors.activeBlue,
                                     padding: EdgeInsets.symmetric(horizontal: 20.0),
-                                    child: Icon(Icons.refresh),
+                                    child: Icon(getCupertinoIconData('refresh')),
                                     onPressed: _restartCounter,
                                 ),
                                 SizedBox(
@@ -77,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 CupertinoButton(
                                     color: CupertinoColors.activeBlue,
                                     padding: EdgeInsets.symmetric(horizontal: 20.0),
-                                    child: Icon(Icons.remove),
+                                    child: Icon(getCupertinoIconData('minus')),
                                     onPressed: _decrementCounter,
                                 )
                             ],
